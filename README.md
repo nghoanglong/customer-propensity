@@ -20,11 +20,11 @@
 ## Set Up
 ### Step 1: Configure a Spark cluster with 3 nodes
 ```
-git clone https://github.com/nghoanglong/spark-cluster-with-docker.git
+git clone https://github.com/nghoanglong/customer-prosensity.git
 
-cd spark-cluster-with-docker
+cd customer-prosensity
 
-docker pull ghcr.io/nghoanglong/spark-cluster-with-docker/spark-cluster:1.0
+bash buil-image.sh
 
 docker-compose up
 ```
