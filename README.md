@@ -36,10 +36,12 @@ docker-compose up
 
 ### Step 3: Download all dataset from the link above and copy to hadoop-spark-master container
 ```
-docker cp [dataset.csv] container_id:/data_path
+docker cp [dataset.csv] hadoop-spark-master:/root
 ```
 ### Step 4: Push all dataset to hadoop cluser
 ```
+docker exec -it hadoop-spark-master bash
+
 hdfs dfs -put dataset.csv [hadoop_path]
 ```
 ### Step 5: Access jupyter notebook and load data for analyzing
